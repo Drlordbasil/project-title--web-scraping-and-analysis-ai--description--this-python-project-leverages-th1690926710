@@ -1,0 +1,16 @@
+The package requirements for this Python program are:
+
+- requests
+- beautifulsoup4
+- google-api-python-client
+- scikit-learn
+- wordcloud
+- matplotlib
+- networkx
+- pandas
+
+You can install these packages by running the following command:
+
+```
+pip install requests beautifulsoup4 google-api-python-client scikit-learn wordcloud matplotlib networkx pandas
+```
