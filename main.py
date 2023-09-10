@@ -72,7 +72,8 @@ class DataVisualization:
 
     def generate_report(self, data):
         # Code for generating automated reports summarizing findings and insights
-        summary_df = pd.DataFrame({'Entity': data.keys(), 'Frequency': data.values()})
+        summary_df = pd.DataFrame(
+            {'Entity': data.keys(), 'Frequency': data.values()})
         print(summary_df)
 
 
@@ -120,5 +121,6 @@ if __name__ == "__main__":
     entity_extraction = EntityExtraction(None)
     data_visualization = DataVisualization()
 
-    data_analysis = DataAnalysis(web_scraper, google_api, sentiment_analysis, entity_extraction, data_visualization)
+    data_analysis = DataAnalysis(
+        web_scraper, google_api, sentiment_analysis, entity_extraction, data_visualization)
     data_analysis.main()
